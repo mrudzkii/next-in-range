@@ -105,8 +105,7 @@ int nextInRange(int i, int a, int b) {
   a = int(lower_bound(duplicate.begin(), duplicate.end(), a) -
           duplicate.begin());
   b = int(upper_bound(duplicate.begin(), duplicate.end(), b) -
-          duplicate.begin()) -
-      1;
+          duplicate.begin()) - 1;
   res = solve(queries[i], main_interval, a, b);
   if (res != INT_MAX)
     return res;
